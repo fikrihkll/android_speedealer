@@ -9,3 +9,4 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
     id 'com.google.dagger.hilt.android' version '2.41' apply false
 }
+apply plugin: 'android-reporting' // For merging all report test from across multiple modules
