@@ -3,10 +3,7 @@ package com.teamdagger.cardealer.home
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -37,7 +34,9 @@ fun Screen() {
         modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colors.background,
     ) {
-        Header()
+        Column {
+            Header()
+        }
     }
 }
 
@@ -45,9 +44,8 @@ fun Screen() {
 fun Header() {
     Surface(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(start = 16.dp, end = 16.dp, top = 32.dp),
-        color = MaterialTheme.colors.background,
+            .fillMaxWidth(),
+        color = MaterialTheme.colors.primary,
     ) {
         SearchTitle()
     }
@@ -55,7 +53,10 @@ fun Header() {
 
 @Composable
 fun SearchTitle() {
-    Row {
+    Row(
+       modifier = Modifier
+       .padding(start = 16.dp, end = 16.dp, top = 32.dp)
+    ){
         Text(
             modifier = Modifier.weight(1f),
             text = "Explore"
