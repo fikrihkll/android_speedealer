@@ -1,5 +1,12 @@
-# android_speedealer
+# Android SpeeDealer
 :star: Mocking car modification plan and track car towing
+
+## Feature Goals:
+UI Reference : [Dribbble by Dmitry Lauretsky](https://dribbble.com/shots/17097339-Vehicle-Retailer-App)
+- [ ] Home Screen
+- [ ] Detail Screen
+- [ ] Car Towing Map Tracking Screen
+- [ ] Explore Screen
 
 # 🌟 Let's Getting started
 
